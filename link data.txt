@@ -1,0 +1,10 @@
+Database (spreadsheet)
+https://docs.google.com/spreadsheets/d/1ruMwOt8F7RfTaKgSuc0fWb-JN5xxkcV5e2SegxqFOOE/edit?pli=1#gid=0
+
+
+(Apps Script thing's)
+id
+AKfycbz8HTBB39mVbCtegd4VztrgE0e_1sv3iFkUGpVbMQlOWIssCVH_MJfzkm7b5hcRYQTA
+
+url
+https://script.google.com/macros/s/AKfycbz8HTBB39mVbCtegd4VztrgE0e_1sv3iFkUGpVbMQlOWIssCVH_MJfzkm7b5hcRYQTA/exec
