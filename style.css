@@ -6,3 +6,15 @@
   background-image: url("bg.jpg");
   min-height: 100%;
 }
+
+.cc-warna {
+  background-color: #354032;
+}
+
+.text-cc {
+  color: #354032;
+}
+
+.text-putih {
+  color: #ffff;
+}
