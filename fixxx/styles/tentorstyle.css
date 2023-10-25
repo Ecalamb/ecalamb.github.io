@@ -1,12 +1,34 @@
 :root {
-  --ccolor: #3a4f92;
-  --bgcolor: #d9ebff;
+  --ccolor1: #3a4f92;
+  --ccolor: #0b7ec0;
+  --bgcolor: #f4fbff;
+  --bgwhite: #fff;
   --black: #294666;
+  --fblack: #000;
+  --fsoft: #798089;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--ccolor);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ccolor1);
 }
 
 body,
 html {
   height: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -14,7 +36,6 @@ html {
   margin: 0;
   text-decoration: none;
   font-family: "poppins", sans-serif;
-  color: white;
 }
 
 /* general */
@@ -59,11 +80,8 @@ html {
   display: none;
 }
 
-.header-img {
-  background-image: url("img/header.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
+.t-algn-r {
+  text-align: right;
 }
 
 .full-height {
@@ -123,31 +141,78 @@ html {
 
 /* header */
 
-header {
+/* header {
   background-size: 100%;
   background-image: url("../img/mainheader.jpg");
+} */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header {
+  background-image: url("../img/backgroundheader.png");
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header-content {
-  padding-top: 7rem;
-  padding-left: 10rem;
-  padding: 7rem 0 0 10rem;
+  width: 500px;
 }
 
-.header-content h1,
-.header-content p {
-  color: var(--bgcolor);
+.header-content .header-tittle {
+  color: var(--fblack);
 }
 
-.header-content h1 {
-  font-size: 3rem;
+.header-content .header-tittle span {
+  color: var(--ccolor);
+}
+
+.header-content .header-description {
+  color: var(--fsoft);
+  font-size: 17px;
+}
+
+.header-content .header-btn a {
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #0b7ec0;
+  margin-top: 20px;
+}
+
+.header-content .header-btn a:hover {
+  background-color: var(--ccolor1);
+}
+
+.header-img {
+  display: block;
+  width: 500px;
+}
+
+.header-img img {
+  width: 100%;
+  height: auto;
 }
 
 /* artikel */
 
+.introduction {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: var(--bgcolor);
+}
+
 .about {
   display: flex;
-  background-color: red;
   width: 100%;
   align-items: center;
   justify-content: space-around;
@@ -174,15 +239,34 @@ header {
   height: auto;
 } */
 
+/* style fitur */
+.fitur {
+  padding: 20px;
+}
+
+.fitur .fitur-box h1 {
+  text-align: center;
+}
+
+.fitur .fitur-box .fitur-wrap {
+  display: flex;
+}
+
+.fitur .fitur-box .fitur-wrap .fitur-img {
+  flex: 50%;
+  margin: 50px;
+  background-color: aqua;
+}
+.fitur .fitur-box .fitur-wrap .fitur-text {
+  flex: 50%;
+  margin: 50px;
+}
+
 /* style tentor */
 
 .tentor {
   padding-top: 5rem;
-  background-image: url("../img/bgtentor.jpg");
-  background-attachment: scroll;
-  background-position: center;
-  color: white;
-  background-size: cover;
+  background-color: var(--bgcolor);
 }
 
 .judul-tentor {
@@ -254,4 +338,70 @@ header {
 
 .kotak-tentor > ul {
   margin: 0.5rem 2rem;
+}
+
+/* harga */
+.harga {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.harga .harga-box {
+  text-align: center;
+  width: 70%;
+}
+
+.harga .harga-box h3 {
+  margin: 20px;
+}
+
+/* pendaftaran */
+.pendaftaran {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+}
+
+.pendaftaran-box {
+  text-align: center;
+  width: 50%;
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+.pendaftaran-box .pendaftaran-form {
+  margin: 15px;
+  text-align: start;
+}
+
+.pendaftaran-box .pendaftaran-form input {
+  width: 100%;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: solid var(--ccolor) 2px;
+}
+.pendaftaran-box .pendaftaran-form p {
+  margin-left: 2px;
+}
+
+.pendaftaran-box button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #0b7ec0;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pendaftaran-box button:hover {
+  background-color: var(--ccolor1);
+  cursor: pointer;
 }

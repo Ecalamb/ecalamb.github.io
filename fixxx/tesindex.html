@@ -25,20 +25,36 @@
       <!-- nav -->
       <nav class="navigasi">
         <a href="#">Home</a>
+        <a href="#">Tentang</a>
         <a href="#">Tentor</a>
         <a href="#">Harga</a>
         <a href="#">Daftar</a>
       </nav>
     </div>
 
-    <header class="full-height">
+    <!-- <header class="full-height">
       <div class="header-content">
         <h1>Make Your Own Study Circle</h1>
         <p>Belajar lebih menyenangkan bersama teman se-Circle</p>
       </div>
+    </header> -->
+
+    <header class="full-height header">
+      <div class="header-img"><img src="img/masterchar.svg" alt="" /></div>
+      <div class="header-content">
+        <h1 class="header-tittle">
+          Make Study <span>Fun</span> with Your Circle
+        </h1>
+        <p class="header-description">
+          Circle Class menyediakan bimbingan belajar bersama Circle kamu
+          sendiri. <br />Sehingga belajar lebih menyenangkan bersama teman
+          se-Circle.
+        </p>
+        <div class="header-btn"><a href="#">Daftar Sekarang</a></div>
+      </div>
     </header>
 
-    <div>
+    <!-- <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0099ff"
@@ -46,9 +62,10 @@
           d="M0,192L40,186.7C80,181,160,171,240,149.3C320,128,400,96,480,112C560,128,640,192,720,213.3C800,235,880,213,960,186.7C1040,160,1120,128,1200,144C1280,160,1360,224,1400,256L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
         ></path>
       </svg>
-    </div>
+    </div> -->
 
-    <article>
+    <!-- intro -->
+    <article class="introduction">
       <div class="about">
         <div class="about-content">
           <h3>Kenalan Yuks!</h3>
@@ -64,6 +81,53 @@
         <div class="about-img"></div>
       </div>
     </article>
+
+    <section class="fitur">
+      <div class="fitur-box">
+        <h1>Fitur unggulan kami adalah</h1>
+        <div class="fitur-wrap">
+          <div class="fitur-img"></div>
+          <div class="fitur-text">
+            <h3>Fleksibel</h3>
+            <p>
+              Circle Class menawarkan 3 opsi belajar: Belajar di rumah peserta,
+              Belajar di rumah tentor, dan Belajar secara Online.
+            </p>
+          </div>
+        </div>
+        <div class="fitur-wrap t-algn-r">
+          <div class="fitur-text">
+            <h3>Nyaman</h3>
+            <p>
+              Peserta dapat memilih sendiri tentor dan juga teman belajarnya.
+              Sehingga suasana belajar dapat lebih nyaman.
+            </p>
+          </div>
+          <div class="fitur-img"></div>
+        </div>
+        <div class="fitur-wrap">
+          <div class="fitur-img"></div>
+          <div class="fitur-text">
+            <h3>Harga Terjangkau</h3>
+            <p>
+              Harga yang kami tawarkan lebih murah jika dibandingkan dengan
+              bimbel privat di luaran.
+            </p>
+          </div>
+        </div>
+        <div class="fitur-wrap t-algn-r">
+          <div class="fitur-text">
+            <h3>Bantuan Khusus</h3>
+            <p>
+              Circle Class menghadirkan bantuan di luar jam belajar kepada
+              peserta jika mengalami kendala seperti kesulitan memahami materi,
+              dan juga kesulitan mengerjakan soal.
+            </p>
+          </div>
+          <div class="fitur-img"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- tentor section -->
     <section class="tentor">
@@ -141,5 +205,78 @@
         <div class="kotak-tentor"></div>
       </div>
     </section>
+
+    <!-- harga -->
+    <section class="harga">
+      <div class="harga-box">
+        <div><h3>Berikut adalah harga yang kami kenakan</h3></div>
+        <div class="list-harga">
+          <img src="img/cowo.jpg" alt="" width="100%" />
+        </div>
+      </div>
+    </section>
+
+    <!-- pendaftaran -->
+    <section class="pendaftaran">
+      <div class="pendaftaran-box" id="daftar">
+        <h3>DAFTAR</h3>
+        <p>
+          Silakan masukkan Nama, Nomor WA yang dapat dihubungi, Tentor yang
+          diinginkan, dan catatan tambahan jika ada
+        </p>
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbz8HTBB39mVbCtegd4VztrgE0e_1sv3iFkUGpVbMQlOWIssCVH_MJfzkm7b5hcRYQTA/exec"
+          id="my-form"
+        >
+          <div class="pendaftaran-form">
+            <p>Nama Lengkap</p>
+            <input
+              type="text"
+              placeholder="Masukkan nama anda"
+              required
+              id="nama"
+              name="nama"
+            />
+          </div>
+          <div class="pendaftaran-form">
+            <p>Nomor Whatsapp</p>
+            <input
+              type="number"
+              placeholder="Masukkan nomor WA"
+              required
+              id="nomor"
+              name="nomor"
+            />
+          </div>
+          <div class="pendaftaran-form">
+            <p>Jumlah Teman Kelompok</p>
+            <input
+              type="text"
+              placeholder="Masukkan tentor pilihan anda"
+              required
+              id="tentor"
+              name="tentor"
+            />
+          </div>
+          <div class="pendaftaran-form">
+            <p>Catatan Lain</p>
+            <input
+              type="text"
+              placeholder="Catatan lain"
+              id="catatan"
+              name="catatan"
+            />
+          </div>
+          <p>
+            <button formtarget="_blank" type="submit">Kirim</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Credit
+    <a href="https://www.freepik.com/free-vector/college-university-students-group-young-happy-people-standing-isolated-white-background_21852399.htm#query=group%20of%20student&position=0&from_view=search&track=ais">Image by studio4rt</a> on Freepik
+   -->
   </body>
 </html>
