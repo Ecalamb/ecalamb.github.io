@@ -3,7 +3,7 @@
   --ccolor: #0b7ec0;
   --bgcolor: #f4fbff;
   --bgwhite: #fff;
-  --black: #294666;
+  --black: #062f5a;
   --fblack: #000;
   --fsoft: #798089;
 }
@@ -108,9 +108,12 @@ html {
   color: white;
 }
 
+.navigasi {
+  width: 40%;
+  justify-content: space-between;
+}
+
 .navigasi a {
-  display: inline-block;
-  margin: 0 1rem;
   font-weight: 400;
 }
 
@@ -204,10 +207,7 @@ header {
 /* artikel */
 
 .introduction {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 50px 10%;
   background-color: var(--bgcolor);
 }
 
@@ -215,7 +215,7 @@ header {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .about .about-content {
@@ -230,6 +230,7 @@ header {
   margin: 20px 0 20px 0;
   background-image: url(../teachers.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
 }
 
@@ -360,7 +361,7 @@ header {
 /* pendaftaran */
 .pendaftaran {
   display: flex;
-  padding: 50px;
+  padding: 75px 5%;
   justify-content: center;
   align-items: center;
   background-color: var(--bgcolor);
@@ -369,17 +370,20 @@ header {
 .pendaftaran-box {
   text-align: center;
   width: 50%;
-  padding: 20px 30px;
   justify-content: center;
 }
 
 .pendaftaran-box .pendaftaran-form {
+  display: flex;
+  flex-direction: column;
   margin: 15px;
-  text-align: start;
+  justify-content: center;
+}
+.pendaftaran-box .pendaftaran-form p {
+  text-align: left;
 }
 
 .pendaftaran-box .pendaftaran-form input {
-  width: 100%;
   padding: 10px 18px;
   border-radius: 5px;
   font-size: 17px;
@@ -404,4 +408,86 @@ header {
 .pendaftaran-box button:hover {
   background-color: var(--ccolor1);
   cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10%;
+  background-image: url("../img/backgroundbnw.png");
+  background-position: center;
+  background-size: cover;
+  background-color: var(--black);
+  color: var(--bgwhite);
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer .footer-content .footer-content-wrap {
+  width: 25%;
+}
+
+.footer .footer-content .footer-content-wrap a {
+  color: var(--bgwhite);
+}
+
+.footer .copyright {
+  border-top: var(--bgwhite) 1px solid;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .header-content .header-description {
+    font-size: 15px;
+  }
+
+  .pendaftaran-box {
+    width: 85%;
+  }
+
+  .pendaftaran-box .pendaftaran-form input {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .navigasi {
+    width: 60%;
+  }
+
+  .header-content .header-description {
+    font-size: 16px;
+  }
+
+  .introduction .about {
+    flex-direction: column;
+  }
+
+  .introduction .about .about-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .introduction .about .about-img {
+    max-width: 90%;
+  }
+
+  .pendaftaran-box {
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  .navigasi {
+    width: 45%;
+  }
 }
