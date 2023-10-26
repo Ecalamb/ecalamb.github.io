@@ -438,7 +438,13 @@ header {
 }
 
 .footer .copyright {
+  display: flex;
   border-top: var(--bgwhite) 1px solid;
+  justify-content: space-between;
+}
+
+.footer .copyright .copyright-content a {
+  color: var(--bgwhite);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
