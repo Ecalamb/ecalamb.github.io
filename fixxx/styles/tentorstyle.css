@@ -203,18 +203,14 @@ html {
   background-image: url("../img/mainheader.jpg");
 } */
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .header {
   background-image: url("../img/backgroundheader.png");
   background-position: center;
   background-size: cover;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-content {
@@ -540,6 +536,26 @@ header {
 
   .muncul {
     display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 50px 10%;
+  }
+
+  .header-img {
+    width: 60%;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-content p {
+    width: 80%;
   }
 
   .header-content .header-description {
