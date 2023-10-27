@@ -29,13 +29,27 @@
       <a href="#"><span class="cc-font">CircleClass</span></a>
 
       <!-- nav -->
-      <nav class="navigasi dflex">
+      <nav class="navigasi muncul">
         <a href="#">Home</a>
         <a href="#introduction">Tentang</a>
         <a href="#tentor">Tentor</a>
         <a href="#harga">Harga</a>
         <a href="#pendaftaran">Daftar</a>
       </nav>
+
+      <nav class="navigasi hidden" id="hiddenid">
+        <a href="#">Home</a>
+        <a href="#introduction">Tentang</a>
+        <a href="#tentor">Tentor</a>
+        <a href="#harga">Harga</a>
+        <a href="#pendaftaran">Daftar</a>
+      </nav>
+      <div class="menu-togle">
+        <button class="toglebtn" onclick="FuncNav()"></button>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <!-- <header class="full-height">
@@ -56,7 +70,7 @@
           sendiri. <br />Sehingga belajar lebih menyenangkan bersama teman
           se-Circle.
         </p>
-        <div class="header-btn"><a href="#">Daftar Sekarang</a></div>
+        <div class="header-btn"><a href="#pendaftaran">Daftar Sekarang</a></div>
       </div>
     </header>
 
@@ -92,7 +106,9 @@
       <div class="fitur-box">
         <h1>Fitur unggulan kami adalah</h1>
         <div class="fitur-wrap">
-          <div class="fitur-img"></div>
+          <div class="fitur-img justify-c-r">
+            <img src="img/fleksibel.png" alt="" />
+          </div>
           <div class="fitur-text">
             <h3>Fleksibel</h3>
             <p>
@@ -109,10 +125,14 @@
               Sehingga suasana belajar dapat lebih nyaman.
             </p>
           </div>
-          <div class="fitur-img"></div>
+          <div class="fitur-img justify-c-l">
+            <img src="img/Nyaman.png" alt="" />
+          </div>
         </div>
         <div class="fitur-wrap">
-          <div class="fitur-img"></div>
+          <div class="fitur-img justify-c-r">
+            <img src="img/harga.png" alt="" />
+          </div>
           <div class="fitur-text">
             <h3>Harga Terjangkau</h3>
             <p>
@@ -130,7 +150,9 @@
               dan juga kesulitan mengerjakan soal.
             </p>
           </div>
-          <div class="fitur-img"></div>
+          <div class="fitur-img justify-c-l">
+            <img src="img/bantuan.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -138,14 +160,14 @@
     <!-- tentor section -->
     <section class="tentor" id="tentor">
       <div class="judul-tentor">
-        <p>
+        <h1>
           Tentor
           <span class="cc-font">CircleClass</span>
-        </p>
+        </h1>
       </div>
 
       <!-- video -->
-      <div class="video-tentor">
+      <!-- <div class="video-tentor">
         <iframe
           width="560"
           height="315"
@@ -156,12 +178,13 @@
           allowfullscreen
         ></iframe>
         <p>Video Pengenalan Circle Class</p>
-      </div>
+      </div> -->
+
       <!-- area tentor -->
       <div class="wrap-tentor">
         <div class="kotak-tentor">
-          <div class="img-tentor tentor-cewe"></div>
-          <h4>Aiga Elmahira</h4>
+          <div class="img-tentor"></div>
+          <h3>Aiga Elmahira</h3>
           <p>Pengalaman Mengajar:</p>
           <ul>
             <li>
@@ -175,33 +198,31 @@
           </ul>
         </div>
         <div class="kotak-tentor">
-          <div class="img-tentor tentor-cewe"></div>
-          <h4>Eka Uswatun</h4>
+          <div class="img-tentor">
+            <img src="img/tentor/eka.jpg" alt="" />
+          </div>
+          <h3>Eka Uswatun</h3>
           <p>Pengalaman Mengajar:</p>
           <ul>
             <li>
-              Tutor bimbel SNBT kelas 11 dan 12 di SMA IIBS Almaahira
-              (2023-sekarang)
+              SMP dan SMA di Thursina IIBS, Tutor matematika (2022- sekarang)
             </li>
-            <li>
-              Tutor bimbel privat matematika untuk siswa SD-SMA(2019-sekarang)
-            </li>
-            <li>Tutor bimbel SNBT di BRITS (2023)</li>
+            <li>Tutor les SD - SMA, Turor privat (2020- sekarang)</li>
+            <li>SMP Arrohmah Putri, Guru Pengganti (Juli-September 2023)</li>
           </ul>
         </div>
         <div class="kotak-tentor">
-          <div class="img-tentor tentor-cowo"></div>
-          <h4>Yohanes Yanto</h4>
+          <div class="img-tentor">
+            <img src="img/tentor/tegar.jpg" alt="" />
+          </div>
+          <h3>Tegar Herlambang</h3>
           <p>Pengalaman Mengajar:</p>
           <ul>
+            <li>SMA Islam Sabilurrosyad Malang, Pengajar matematika (2022)</li>
+            <li>Privat, Tutor les SMP - SMA (2021-sekarang)</li>
             <li>
-              Tutor bimbel SNBT kelas 11 dan 12 di SMA IIBS Almaahira
-              (2023-sekarang)
+              MTsn 1 dan MAN 2 Kota Malang, Tentor matematika (2023-sekarang)
             </li>
-            <li>
-              Tutor bimbel privat matematika untuk siswa SD-SMA(2019-sekarang)
-            </li>
-            <li>Tutor bimbel SNBT di BRITS (2023)</li>
           </ul>
         </div>
         <div class="kotak-tentor"></div>
@@ -227,8 +248,8 @@
       <div class="pendaftaran-box" id="daftar">
         <h3>DAFTAR</h3>
         <p>
-          Silakan masukkan Nama, Nomor WA yang dapat dihubungi, Tentor yang
-          diinginkan, dan catatan tambahan jika ada
+          Silakan masukkan Nama, Nomor WA yang dapat dihubungi, Jumlah teman
+          kelompok, dan catatan tambahan jika ada
         </p>
         <form
           method="POST"
@@ -258,8 +279,8 @@
           <div class="pendaftaran-form">
             <p>Jumlah Teman Kelompok</p>
             <input
-              type="text"
-              placeholder="Masukkan tentor pilihan anda"
+              type="number"
+              placeholder="Masukkan jumlah teman 1 kelompok"
               required
               id="tentor"
               name="tentor"
@@ -274,9 +295,16 @@
               name="catatan"
             />
           </div>
-          <p>
-            <button formtarget="_blank" type="submit">Kirim</button>
-          </p>
+
+          <div class="pendaftaran-button">
+            <p>
+              <button formtarget="_blank" type="submit">Daftar</button>
+            </p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B6281326847957&text&type=phone_number&app_absent=0"
+              >Tanya dulu</a
+            >
+          </div>
         </form>
       </div>
     </section>
@@ -309,11 +337,11 @@
       <div class="copyright">
         <div class="copyright-content">
           <p>
-            <i class="bi bi-c-circle"></i>2023 Circleclass. All Right Reserved
+            Icon by
+            <a href="https://getbootstrap.com"
+              ><i class="bi bi-bootstrap"></i
+            ></a>
           </p>
-        </div>
-        <div class="copyright-content">
-          <p>Icon by <i class="bi bi-bootstrap"></i></p>
           <p>
             <a
               href="https://www.freepik.com/free-vector/college-university-students-group-young-happy-people-standing-isolated-white-background_21852399.htm#query=group%20of%20student&position=0&from_view=search&track=ais"
@@ -322,7 +350,34 @@
             on Freepik
           </p>
         </div>
+        <div class="copyright-content">
+          <p>
+            <i class="bi bi-c-circle"></i>2023 Circleclass. All Right Reserved
+          </p>
+        </div>
       </div>
     </section>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function FuncNav() {
+        document.getElementById("hiddenid").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".toglebtn")) {
+          var dropdowns = document.getElementsByClassName("hidden");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>

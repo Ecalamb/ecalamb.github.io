@@ -84,6 +84,14 @@ html {
   text-align: right;
 }
 
+.justify-c-r {
+  justify-content: right;
+}
+
+.justify-c-l {
+  justify-content: left;
+}
+
 .full-height {
   height: 100%;
 }
@@ -94,7 +102,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 5;
   background-color: var(--ccolor);
   justify-content: space-between;
   align-items: center;
@@ -109,6 +117,7 @@ html {
 }
 
 .navigasi {
+  display: flex;
   width: 40%;
   justify-content: space-between;
 }
@@ -140,6 +149,51 @@ html {
 
 .navbar > a {
   padding: 10px 5px;
+}
+
+.hidden {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25% !important;
+  height: 180px;
+  flex-direction: column;
+  background-color: var(--ccolor);
+  margin-top: 57px;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: -3px 3px 8px var(--black);
+}
+
+.show {
+  display: flex;
+}
+
+/* hamburger */
+
+.menu-togle {
+  display: none;
+  flex-direction: column;
+  height: 24px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-togle button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-togle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 /* header */
@@ -242,7 +296,7 @@ header {
 
 /* style fitur */
 .fitur {
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .fitur .fitur-box h1 {
@@ -255,19 +309,30 @@ header {
 
 .fitur .fitur-box .fitur-wrap .fitur-img {
   flex: 50%;
+  display: flex;
   margin: 50px;
-  background-color: aqua;
 }
+
+.fitur .fitur-box .fitur-wrap .fitur-img img {
+  height: 200px;
+}
+
 .fitur .fitur-box .fitur-wrap .fitur-text {
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 50px;
 }
 
 /* style tentor */
 
 .tentor {
-  padding-top: 5rem;
   background-color: var(--bgcolor);
+  background-image: url(../img/verbackground.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 5%;
 }
 
 .judul-tentor {
@@ -296,9 +361,9 @@ header {
 
 .kotak-tentor {
   padding: 10px;
-  width: 20rem;
+  flex: 20%;
   height: 30rem;
-  background-color: #3a4f92d7;
+  background-color: #0b7ec0d2;
   backdrop-filter: blur(5px);
   border-radius: 20px;
 }
@@ -310,21 +375,16 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid black;
-  outline-offset: 2px;
+  outline: 3px solid #63afdb;
+  outline-offset: 3px;
 }
 
-.tentor-cewe {
-  background-image: url("../img/cewe.jpg");
-  background-size: cover;
+.kotak-tentor .img-tentor img {
+  width: 100%;
+  border-radius: 50%;
 }
 
-.tentor-cowo {
-  background-image: url("../img/cowo.jpg");
-  background-size: cover;
-}
-
-.kotak-tentor > h4 {
+.kotak-tentor > h3 {
   margin: 1rem 0 0.5rem 0;
   text-align: center;
   font-weight: 600;
@@ -338,7 +398,8 @@ header {
 }
 
 .kotak-tentor > ul {
-  margin: 0.5rem 2rem;
+  margin: 0 2rem;
+  color: #1a1a1a;
 }
 
 /* harga */
@@ -393,20 +454,43 @@ header {
   margin-left: 2px;
 }
 
-.pendaftaran-box button {
+.pendaftaran-button {
+  display: flex;
+  justify-content: center;
+}
+
+.pendaftaran-box .pendaftaran-button button {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #0b7ec0;
-  margin-top: 20px;
   border: none;
   color: white;
   font-weight: 600;
   font-size: 15px;
+  margin: 20px 10px;
 }
 
-.pendaftaran-box button:hover {
+.pendaftaran-box .pendaftaran-button button:hover {
   background-color: var(--ccolor1);
+  cursor: pointer;
+}
+
+.pendaftaran-box .pendaftaran-button a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #25d366;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 20px 10px;
+}
+
+.pendaftaran-box .pendaftaran-button a:hover {
+  background-color: #128c7e;
   cursor: pointer;
 }
 
@@ -448,9 +532,22 @@ header {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 625px) {
+  .menu-togle {
+    display: flex;
+    position: relative;
+  }
+
+  .muncul {
+    display: none;
+  }
+
   .header-content .header-description {
     font-size: 15px;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-img img {
+    height: 150px;
   }
 
   .pendaftaran-box {
@@ -461,12 +558,33 @@ header {
     padding: 7px 15px;
     font-size: 14px;
   }
+
+  .footer .footer-content {
+    flex-direction: column;
+  }
+
+  .footer .footer-content .footer-content-wrap {
+    width: 70%;
+    margin-bottom: 8px;
+  }
+
+  .footer .copyright {
+    flex-direction: column;
+  }
+
+  .footer .copyright .copyright-content {
+    margin-bottom: 8px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   .navigasi {
     width: 60%;
+  }
+
+  .navbar a {
+    font-size: 0.95rem;
   }
 
   .header-content .header-description {
@@ -486,8 +604,26 @@ header {
     max-width: 90%;
   }
 
+  .fitur .fitur-box .fitur-wrap .fitur-img img {
+    height: 175px;
+  }
+
+  .kotak-tentor {
+    padding: 10px;
+    flex: 30%;
+    height: 35rem;
+  }
+
   .pendaftaran-box {
     width: 70%;
+  }
+
+  .footer .footer-content {
+    font-size: 0.8rem;
+  }
+
+  .footer .copyright {
+    font-size: 0.8rem;
   }
 }
 
