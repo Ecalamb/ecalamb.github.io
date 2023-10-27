@@ -98,6 +98,7 @@ html {
 
 /* navbar */
 .navbar {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,7 +119,6 @@ html {
 
 .navigasi {
   display: flex;
-  width: 40%;
   justify-content: space-between;
 }
 
@@ -148,7 +148,7 @@ html {
 }
 
 .navbar > a {
-  padding: 10px 5px;
+  padding: 10px 0;
 }
 
 .hidden {
@@ -550,8 +550,14 @@ header {
     height: 150px;
   }
 
+  .fitur .fitur-box .fitur-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
   .kotak-tentor {
     font-size: 0.8rem;
+    flex: 80%;
   }
 
   .pendaftaran-box {
@@ -582,9 +588,9 @@ header {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 812px) {
+@media screen and (min-width: 626px) and (max-width: 991px) {
   .navigasi {
-    width: 60%;
+    width: 45%;
   }
 
   .navbar a {
@@ -632,7 +638,7 @@ header {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 812px) {
+@media only screen and (min-width: 992px) {
   .navigasi {
     width: 45%;
   }
