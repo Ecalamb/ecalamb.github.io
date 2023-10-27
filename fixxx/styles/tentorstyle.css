@@ -362,7 +362,7 @@ header {
 .kotak-tentor {
   padding: 10px;
   flex: 20%;
-  height: 30rem;
+  height: 35rem;
   background-color: #0b7ec0d2;
   backdrop-filter: blur(5px);
   border-radius: 20px;
@@ -550,6 +550,10 @@ header {
     height: 150px;
   }
 
+  .kotak-tentor {
+    font-size: 0.8rem;
+  }
+
   .pendaftaran-box {
     width: 85%;
   }
@@ -578,7 +582,7 @@ header {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .navigasi {
     width: 60%;
   }
@@ -628,7 +632,7 @@ header {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 812px) {
   .navigasi {
     width: 45%;
   }
