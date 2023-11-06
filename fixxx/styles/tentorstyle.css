@@ -558,19 +558,20 @@ html {
     align-items: center;
     text-align: center;
     justify-content: center;
-  }
-
-  .header-content h1 {
     width: 80%;
   }
 
+  .header-content h1 {
+    width: 85%;
+    font-size: 1.3rem;
+  }
+
   .header-content p {
-    width: 75%;
-    font-size: 15px;
+    width: 85%;
   }
 
   .header-content .header-description {
-    font-size: 15px;
+    font-size: 0.85rem;
   }
 
   .introduction .about {
