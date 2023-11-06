@@ -15,7 +15,6 @@ body {
 body,
 html {
   height: 100%;
-  width: 100vw;
 }
 html {
   scroll-behavior: smooth;
@@ -351,12 +350,12 @@ html {
   margin-bottom: 3rem;
 }
 
-.tentor .video-tentor > iframe {
+/* .tentor .video-tentor > iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: none;
-}
+} */
 
 .wrap-tentor {
   gap: 10px;
@@ -419,10 +418,6 @@ html {
 .harga .harga-box {
   text-align: center;
   width: 70%;
-}
-
-.harga .harga-box h3 {
-  margin: 20px;
 }
 
 /* pendaftaran */
@@ -612,11 +607,11 @@ html {
   }
 
   .fitur .fitur-box .fitur-wrap .fitur-img {
-    margin: 20px;
+    margin: 20px 0;
   }
 
   .fitur .fitur-box .fitur-wrap .fitur-text {
-    margin: 20px;
+    margin: 20px 0;
   }
 
   .kotak-tentor {
