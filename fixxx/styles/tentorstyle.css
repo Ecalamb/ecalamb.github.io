@@ -29,6 +29,7 @@ html {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -266,6 +267,17 @@ html {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+
+.hidden-about-img {
+  max-width: 40%;
+  width: 500px;
+  height: 200px;
+  margin: 20px 0 20px 0;
+  background-image: url(../teachers.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
 }
 
 .about .about-content {
@@ -569,6 +581,29 @@ html {
     font-size: 15px;
   }
 
+  .introduction .about {
+    flex-direction: column;
+  }
+
+  .introduction .about .hidden-about-img {
+    max-width: 90%;
+    max-width: 90%;
+  }
+
+  .introduction .about .about-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .introduction .about .about-img {
+    display: none;
+    max-width: 90%;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-huge {
+    display: none;
+  }
+
   .fitur .fitur-box .fitur-wrap .fitur-img img {
     height: 150px;
   }
@@ -576,6 +611,15 @@ html {
   .fitur .fitur-box .fitur-wrap {
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-img {
+    margin: 20px;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-text {
+    margin: 20px;
   }
 
   .kotak-tentor {
@@ -628,17 +672,38 @@ html {
     flex-direction: column;
   }
 
+  .introduction .about .hidden-about-img {
+    max-width: 90%;
+    max-width: 90%;
+  }
+
   .introduction .about .about-content {
     max-width: 90%;
     text-align: center;
   }
 
   .introduction .about .about-img {
+    display: none;
     max-width: 90%;
   }
 
+  .fitur .fitur-box .fitur-wrap .fitur-med {
+    display: none;
+  }
+
   .fitur .fitur-box .fitur-wrap .fitur-img img {
-    height: 175px;
+    max-width: 150px;
+    height: auto;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-img {
+    flex: 30%;
+    margin: 20px;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-text {
+    flex: 70%;
+    margin: 20px;
   }
 
   .kotak-tentor {
@@ -664,5 +729,13 @@ html {
 @media only screen and (min-width: 992px) {
   .navigasi {
     width: 45%;
+  }
+
+  .introduction .about .hidden-about-img {
+    display: none;
+  }
+
+  .fitur .fitur-box .fitur-wrap .fitur-med {
+    display: none;
   }
 }
