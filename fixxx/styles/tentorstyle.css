@@ -656,10 +656,6 @@ html {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 626px) and (max-width: 991px) {
-  .navigasi {
-    width: 45%;
-  }
-
   .navbar a {
     font-size: 0.95rem;
   }
@@ -673,7 +669,6 @@ html {
   }
 
   .introduction .about .hidden-about-img {
-    max-width: 90%;
     max-width: 90%;
   }
 
