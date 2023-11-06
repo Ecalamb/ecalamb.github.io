@@ -8,19 +8,8 @@
   --fsoft: #798089;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--ccolor);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--ccolor1);
+body {
+  background-color: #fff;
 }
 
 body,
@@ -726,6 +715,21 @@ html {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--ccolor);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ccolor1);
+  }
+
   .navigasi {
     width: 45%;
   }
