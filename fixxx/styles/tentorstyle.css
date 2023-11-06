@@ -365,23 +365,33 @@ html {
 }
 
 .kotak-tentor {
-  padding: 10px;
-  flex: 20%;
-  height: 35rem;
+  padding: 10px 10px 20px 10px;
+  flex: 30%;
+  height: auto;
   background-color: #0b7ec0d2;
   backdrop-filter: blur(5px);
   border-radius: 20px;
 }
 
-.kotak-tentor .img-tentor {
-  width: 10rem;
-  height: 10rem;
+.kotak-tentor .main-tentor {
+  display: flex;
+  margin: 15px 15px 0 15px;
+}
+
+.kotak-tentor .main-tentor .img-tentor {
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 3px solid #63afdb;
-  outline-offset: 3px;
+}
+
+.kotak-tentor .main-tentor .desk-tentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 10px 10px;
+}
+.kotak-tentor .main-tentor .desk-tentor h5 {
+  font-style: italic;
 }
 
 .kotak-tentor .img-tentor img {
@@ -699,9 +709,8 @@ html {
   }
 
   .kotak-tentor {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     flex: 30%;
-    height: 35rem;
   }
 
   .pendaftaran-box {
