@@ -148,13 +148,19 @@ html {
   right: 0;
   top: 0;
   width: 25% !important;
-  height: 180px;
+  height: auto;
   flex-direction: column;
   background-color: var(--ccolor);
   margin-top: 57px;
   padding: 10px 0;
   text-align: center;
+  align-content: space-around;
   /* box-shadow: -3px 3px 8px var(--black); */
+}
+
+.hidden a {
+  color: #fff;
+  padding: 5px 0;
 }
 
 .show {
