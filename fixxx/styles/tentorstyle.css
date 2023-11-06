@@ -543,7 +543,6 @@ html {
 @media only screen and (max-width: 625px) {
   .menu-togle {
     display: flex;
-    position: relative;
   }
 
   .muncul {
@@ -656,6 +655,10 @@ html {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 626px) and (max-width: 991px) {
+  .navbar nav {
+    width: 60%;
+  }
+
   .navbar a {
     font-size: 0.95rem;
   }
