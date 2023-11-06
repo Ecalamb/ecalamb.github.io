@@ -164,6 +164,7 @@ html {
 /* hamburger */
 
 .menu-togle {
+  float: none;
   display: none;
   flex-direction: column;
   height: 24px;
