@@ -2,16 +2,22 @@ function FuncPrima() {
   let cek = document.getElementById("prime").value;
   let holder = 0;
   let pembagi = 0;
+  let temp = 0;
   cek = Math.round(cek);
   if (cek > 0) {
     for (let i = 1; i < cek + 1; i++) {
+      pembagi = temp;
       if (cek % i == 0) {
         holder++;
-        pembagi == i;
+        temp = i;
       }
     }
-    let print = holder == 2 ? "bilangan prima" : "bukan bilangan prima";
-    document.getElementById("ReturnPrime").innerHTML = cek + " " + print;
+    let print =
+      holder == 2
+        ? "bilangan prima"
+        : "bukan bilangan prima karena habis dibagi ";
+    document.getElementById("ReturnPrime").innerHTML =
+      cek + " " + print + pembagi;
   } else {
     document.getElementById("ReturnPrime").innerHTML =
       cek + " tidak bisa ditentukan";
