@@ -1,20 +1,29 @@
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("bg.jpg");
-  min-height:100%;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-.cc-warna {
-  background-color: #5888ab;
+html {
+  background-image: url(bg.jpg);
+  padding: 20px;
 }
 
-.text-cc {
-  color: #354032;
+header {
+  color: white;
+  text-align: center;
+  margin: 2rem;
 }
 
-.text-putih {
-  color: #ffff;
+article {
+  background-color: #286cd373;
+
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.section {
+  color: azure;
+  margin: 20px 0px;
 }
